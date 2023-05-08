@@ -2,69 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My GitHub Projects</title>
 
-  <title>Jono Wood</title>
+  <!-- Add Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <!-- Add FontAwesome Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 
+  <!-- Add custom CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <section>
-        <article>
-            <h2 id="body">Jono Wood Bio Page</h2>  
-            <br>
-            <img width="100" src="https://thumbs.dreamstime.com/b/portrait-funny-weird-mature-man-making-goofy-crazy-face-studio-close-up-blond-wearing-t-shirt-grimacing-fooling-around-looking-218439817.jpg" alt="This Guy" >
-            <br>
-  
-            <em>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </em>
-    
-            <br>    
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet venenatis urna cursus eget nunc scelerisque viverra. Quis viverra nibh cras pulvinar. Urna molestie at elementum eu facilisis sed odio morbi quis. Hendrerit gravida rutrum quisque non tellus orci ac auctor augue. Vulputate dignissim suspendisse in est ante in. Duis ultricies lacus sed turpis tincidunt id aliquet risus. Aliquam vestibulum morbi blandit cursus. Ac orci phasellus egestas tellus rutrum tellus. Sit amet nulla facilisi morbi tempus iaculis urna id volutpat. Nam at lectus urna duis. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Nulla posuere sollicitudin aliquam ultrices sagittis. Ut tellus elementum sagittis vitae et leo.</p>
-            <br>
-            <h3>Some stuff....</h3>
-            <ul>
-                <li><a href="http://www.reddit.com/" target="_blank">Reddit</a></li><br>
-                <li><a href="https://www.apple.com/" target="_blank">Apple</a></li><br>
-                <li><a href="https://www.lego.com/" target="_blank">Lego</a></li>
-            </ul>
+  <div class="columns is-desktop">
+    <div class="column is-narrow">
+      <aside class="menu">
+        <ul class="menu-list">
+          <li>
+            <a href="#home" class="is-active">Home</a>
+          </li>
+          <li>
+            <a href="#featured-projects">Featured Projects</a>
+          </li>
+          <li>
+            <a href="#all-projects">All Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <div class="column is-full">
+      <header class="section">
+        <div class="container">
+          <h1 class="title is-1">My GitHub Projects</h1>
+          <h2 class="subtitle is-3">Showcasing my work to help land a job in data analysis</h2>
+        </div>
+      </header>
 
-            <hr>
-            <table border="2">
-                <thead>
-                  <tr>
-                    <th colspan="4">My Favourite:</th>
-                  </tr>
-                  <tr>
-                    <th>Movies</th>
-                    <th>Books</th>
-                    <th>Bands</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Ghostbusters</td>
-                    <td>The one i'm not required to read</td>
-                    <td>Blue Stones</td>
-                  </tr>
-                  <tr>
-                    <td>Sicario</td>
-                    <td>As Above</td>
-                    <td>Fleetwood Mac</td>
-                  </tr>
-              </table>
-            <br>
-            <br>
-            <li><strong>Another Page ->      </strong><a href="https://jonowood.github.io/table.html">Link Here</a></li>
-            <br>
-            <br>            
-            <br>            
-            <br>            
-            <br>            
-            <br>
-        </article>
-    </section>
+      <section id="all-projects" class="section">
+        <div class="container">
+          <h3 class="title is-3">All Projects</h3>
+          <div id="repo-container" class="columns is-multiline">
+            <!-- Repository cards will be inserted here -->
+          </div>
+        </div>
+      </section>
+
+      <footer class="section">
+        <div class="container">
+          <p>
+            Built with <a href="https://bulma.io/" target="_blank">Bulma</a> and hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+          </p>
+          <p>
+            Copyright &copy; 2023 Jono Wood. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Add custom JavaScript -->
+  <script src="scripts.js"></script>
 </body>
 </html>
