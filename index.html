@@ -15,32 +15,95 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="columns is-desktop">
-    <div class="column is-narrow">
-      <aside class="menu">
-        <ul class="menu-list">
-          <li>
-            <a href="#home" class="is-active">Home</a>
-          </li>
-          <li>
-            <a href="#featured-projects">Featured Projects</a>
-          </li>
-          <li>
-            <a href="#all-projects">All Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </aside>
-    </div>
-    <div class="column is-full">
-      <header class="section">
+  <section class="hero is-success is-fullheight">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <header class="navbar">
         <div class="container">
-          <h1 class="title is-1">My GitHub Projects</h1>
-          <h2 class="subtitle is-3">Showcasing my work to help land a job in data analysis</h2>
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img src="logo.png" alt="Logo">
+            </a>
+            <span class="navbar-burger" data-target="navbarMenuHeroC">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroC" class="navbar-menu">
+            <div class="navbar-end">
+              <a href="#home" class="navbar-item is-active">
+                <span class="icon">
+                  <i class="fas fa-home"></i>
+                </span>
+                Home
+              </a>
+              <a href="#featured-projects" class="navbar-item">
+                <span class="icon">
+                  <i class="fas fa-star"></i>
+                </span>
+                Featured Projects
+              </a>
+              <a href="#all-projects" class="navbar-item">
+                <span class="icon">
+                  <i class="fas fa-project-diagram"></i>
+                </span>
+                All Projects
+              </a>
+              <a href="#contact" class="navbar-item">
+                <span class="icon">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                Contact
+              </a>
+              <span class="navbar-item">
+                <a href="https://github.com/jonowood" class="button is-success" target="_blank" width="800">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>View on GitHub</span>
+                </a>
+              </span>
+            </div>
+          </div>
+          
         </div>
       </header>
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">UNDER CONSTRUCTION My GitHub Projects</h1>
+        <h2 class="subtitle">Showcasing my work to help land a job in data analysis</h2>
+      </div>
+    </div>
+
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+      <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+          <ul>
+            <li class="is-active"><a href="#home">Home</a></li>
+            <li><a href="#featured-projects">Featured Projects</a></li>
+            <li><a href="#all-projects">All Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+
+      <!-- Add Featured Projects section with the carousel -->
+      <section id="featured-projects" class="section">
+        <div class="container">
+          <h3 class="title is-3">Featured Projects</h3>
+          <div class="carousel">
+            <!-- Add carousel items here -->
+          </div>
+        </div>
+      </section>
 
       <section id="all-projects" class="section">
         <div class="container">
@@ -49,7 +112,6 @@
             <!-- Repository cards will be inserted here -->
           </div>
         </div>
-      </section>
 
       <footer class="section">
         <div class="container">
@@ -65,6 +127,9 @@
   </div>
 
   <!-- Add custom JavaScript -->
+  <!-- Add Bulma Carousel JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bulma-carousel/6.1.0/js/bulma-carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/js/bulma-extensions.min.js"></script>
   <script src="scripts.js"></script>
 </body>
 </html>
